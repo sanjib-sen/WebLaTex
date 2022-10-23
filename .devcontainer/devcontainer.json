@@ -50,7 +50,8 @@
 				"editor.formatOnSave": true
 			},
 			"extensions": [
-				"James-Yu.latex-workshop"
+				"James-Yu.latex-workshop",
+				"ms-vsliveshare.vsliveshare"
 			]
 		}
 	}

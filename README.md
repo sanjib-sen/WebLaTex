@@ -10,6 +10,7 @@
   - [Installation Instructions](#installation-instructions)
   - [Editor Instructions](#editor-instructions)
   - [To use with LuaLatex or any other Tex program](#to-use-with-lualatex-or-any-other-tex-program)
+  - [Live Collaboration](#live-collaboration)
   - [What's Next](#whats-next)
   - [Contact](#contact)
 
@@ -53,6 +54,12 @@ For example, to use **`LuaLatex`**:
 ```tex
 %!TEX program = lualatex
 ```
+
+## Live Collaboration
+
+Just Click on the **Live Share** Sidebar button and you are good to go
+  ![Collaboration](images/collaborate.png)
+
 
 ## What's Next
 
