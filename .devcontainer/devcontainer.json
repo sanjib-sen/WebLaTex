@@ -1,0 +1,57 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
+{
+	"name": "Ubuntu",
+	"image": "qmcgaw/latexdevcontainer:latest-full",
+	"remoteUser": "root",
+	"features": {},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"latex-workshop.latex.clean.fileTypes": [
+					"*.aux",
+					"*.bbl",
+					"*.blg",
+					"*.idx",
+					"*.ind",
+					"*.lof",
+					"*.lot",
+					"*.out",
+					"*.toc",
+					"*.acn",
+					"*.acr",
+					"*.alg",
+					"*.glg",
+					"*.glo",
+					"*.gls",
+					"*.fls",
+					"*.log",
+					"*.fdb_latexmk",
+					"*.snm",
+					"*.synctex(busy)",
+					"*.synctex.gz(busy)",
+					"*.nav",
+					"*.vrb",
+					"*.gz", // Added by me, wasn't default
+					"*.bcf", // Added by me, wasn't default
+					"*.nlo", // Added by me, wasn't default
+					"*.run.xml" // Added by me, wasn't default
+				],
+				"latex-workshop.latex.outDir": "./PDF",
+				"latex-workshop.latex.autoClean.run": "onBuilt",
+				"latex-workshop.latex.build.forceRecipeUsage": false,
+				"latex-workshop.synctex.afterBuild.enabled": true,
+				"latex-workshop.view.pdf.viewer": "tab",
+				"latex-workshop.latex.clean.subfolder.enabled": true,
+				"latex-workshop.latex.magic.args": [
+					"-output-directory=PDF",
+					"%DOC%"
+				],
+				"editor.formatOnSave": true
+			},
+			"extensions": [
+				"James-Yu.latex-workshop"
+			]
+		}
+	}
+}
