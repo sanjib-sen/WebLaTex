@@ -60,7 +60,6 @@ For example, to use **`LuaLatex`**:
 Just Click on the **Live Share** Sidebar button and you are good to go
   ![Collaboration](images/collaborate.png)
 
-
 ## What's Next
 
 1. Will optimize the backend to decrease installation time and PDF showing time for the first time

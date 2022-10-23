@@ -47,7 +47,10 @@
 					"-output-directory=PDF",
 					"%DOC%"
 				],
-				"editor.formatOnSave": true
+				"editor.formatOnSave": true,
+				"latex-workshop.latex.pdfWatch.delay": 500,
+				"latex-workshop.latex.watch.delay": 500,
+				"latex-workshop.codespaces.portforwarding.openDelay": 20000
 			},
 			"extensions": [
 				"James-Yu.latex-workshop",
