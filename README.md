@@ -2,7 +2,7 @@
 
 ![WebLatex](images/image.png)
 
-> A complete alternative for Overleaf with VSCode + Web + Git Integration
+> A complete alternative for Overleaf with VSCode + Web + Git Integration + Live Collaboration Support
 
 - [The WebLatex](#the-weblatex)
   - [Screenshot](#screenshot)
