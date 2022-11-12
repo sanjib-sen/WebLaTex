@@ -16,6 +16,7 @@
   - [Configuration](#configuration)
   - [More Features and Configuration](#more-features-and-configurations)
   - [Contribution](#contribution)
+  - [Credits](#credits)
   - [What's Next](#whats-next)
   - [Contact](#contact)
 
@@ -122,6 +123,11 @@ All of the features and configurations can be found [here](https://github.com/Ja
 ## Contribution
 
 I am open to and actually request you to contribute in this project. You can just Create a new issue to let me know about your concern / requests or just send a pull request with your desired changes.
+
+## Credits
+
+- @James-Yu 's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the latex support.
+- [qmcgaw/latexdevcontainer](https://hub.docker.com/r/qmcgaw/latexdevcontainer) For Latex compilation.
 
 ## What's Next
 
