@@ -52,10 +52,8 @@ Yes, but
 
 ## Installation Instructions
 
-> You can either fork this repository or just Use as a template. But you will not get latest updates if you use this as a template.
-
 1. Login or Sign Up to [GitHub](https://github.com/login)
-2. Fork this repository or just click [Here](https://github.com/sanjib-sen/weblatex/fork). Or, If you want to use as a template just Click on `Use this template` and `Create a new Repository`
+2. Fork this repository or just click [Here](https://github.com/sanjib-sen/weblatex/fork).
 3. Give it a name and select **Create Fork**
 4. Select **<> Code** > **CodeSpaces** > **Create Codespace on Main**
     ![tutorial](images/tutorial.gif)
