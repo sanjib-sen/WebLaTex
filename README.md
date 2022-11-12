@@ -94,13 +94,13 @@ Just Click on the **Live Share** Sidebar button and you are good to go
     ```json
     "latex-workshop.latex.outDir": "<YourDirectoryName>",
     ...
-    "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>",...],
+    "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>",..],
     ```
 
 - If you do not need the Live Collaboration at all, you can just **remove** the `"ms-vsliveshare.vsliveshare"` extension from the extension list in `./.devcontainer/devcontainer.json`
 
     ```json
-    "extensions": [...,"ms-vsliveshare.vsliveshare"]
+    "extensions": [..,"ms-vsliveshare.vsliveshare"]
     ```
 
 - Other configuration (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check 
