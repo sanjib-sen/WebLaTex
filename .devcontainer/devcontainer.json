@@ -3,7 +3,7 @@
 {
 	"name": "Ubuntu",
 	"image": "qmcgaw/latexdevcontainer:latest-full",
-	"remoteUser": "root",
+	"remoteUser": "root", // Do not change this
 	"features": {},
 	"customizations": {
 		"vscode": {
@@ -32,11 +32,12 @@
 					"*.synctex.gz(busy)",
 					"*.nav",
 					"*.vrb",
-					"*.gz", // Added by me, wasn't default
-					"*.bcf", // Added by me, wasn't default
-					"*.nlo", // Added by me, wasn't default
-					"*.run.xml" // Added by me, wasn't default
+					"*.gz", // Added Manually
+					"*.bcf", // Added Manually
+					"*.nlo", // Added Manually
+					"*.run.xml" // Added Manually
 				],
+				// Edit the following property to change export directory
 				"latex-workshop.latex.outDir": "./PDF",
 				"latex-workshop.latex.autoClean.run": "onBuilt",
 				"latex-workshop.latex.build.forceRecipeUsage": false,
@@ -44,7 +45,7 @@
 				"latex-workshop.view.pdf.viewer": "tab",
 				"latex-workshop.latex.clean.subfolder.enabled": true,
 				"latex-workshop.latex.magic.args": [
-					"-output-directory=PDF",
+					"-output-directory=PDF", // to change the output directory
 					"%DOC%"
 				],
 				"editor.formatOnSave": true,
@@ -54,6 +55,7 @@
 			},
 			"extensions": [
 				"James-Yu.latex-workshop",
+				// Remove the following line if you do not want Live-Collaboration Feature
 				"ms-vsliveshare.vsliveshare"
 			]
 		}
