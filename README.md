@@ -5,7 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Users%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network)
 [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
-> A complete alternative for Overleaf with VSCode + Web + Git Integration + Live Collaboration Support
+> A complete alternative for Overleaf with VSCode + Web + Git Integration + Grammarly + Live Collaboration Support
 
 - [The WebLatex](#the-weblatex)
   - [Screenshot](#screenshot)
@@ -15,6 +15,7 @@
   - [Where is my PDF?](#where-is-my-pdf)
   - [Editor Instructions](#editor-instructions)
   - [To use with LuaLatex or any other Tex program](#to-use-with-lualatex-or-any-other-tex-program)
+  - [Grammarly](#grammarly)
   - [Live Collaboration](#live-collaboration)
   - [Configuration](#configuration)
   - [More Features and Configuration](#more-features-and-configurations)
@@ -37,7 +38,9 @@ Think of a moment, your thesis supervisor and co-supervisor wanted to make some 
 
 Or, you are in your car, away from your Laptop / Desktop. Suddenly remember you forgot to change the title of your document from "Loren Ipsum" to your actual document title. Won't it be great to modify your document On the Go with your phone? Or in a nerdy way, Apple Watch?
 
-**Yes! You can do all of these things now with Git, GitHub, Full VSCode Integration, Live Collaboration and Web Support - The WebLatex.**
+And do I really need to tell about the usefulness of [Grammarly](https://www.grammarly.com/)?
+
+**Yes! You can do all of these things now with Git, GitHub, Full VSCode Integration, Grammarly, Live Collaboration and Web Support - The WebLatex.**
 
 ### Just use overleaf
 
@@ -86,6 +89,14 @@ For example, to use **`LuaLatex`**:
 %!TEX program = lualatex
 ```
 
+## Grammarly
+
+This editor has built in grammarly support for `.tex` files. If you want to use grammarly for other files, Go to `./.devcontainer/devcontainer.json` and add your file extension in the
+
+  ```json
+    "grammarly.files.include": ["*.tex", ".YourFileExtension"]
+  ```
+
 ## Live Collaboration
 
 Just Click on the **Live Share** Sidebar button and you are good to go
@@ -107,7 +118,7 @@ Just Click on the **Live Share** Sidebar button and you are good to go
     "extensions": [..,"ms-vsliveshare.vsliveshare"]
     ```
 
-- Other configuration (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check 
+- Other configuration (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check the [Wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
 
 ## More Features and Configurations
 
