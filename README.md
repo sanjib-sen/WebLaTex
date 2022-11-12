@@ -102,6 +102,11 @@ And in case you do not want to use Grammarly for other files, add your file exte
     "grammarly.files.exclude": ["*.md", ".YourFileExtension"]
   ```
 
+You can use Grammarly in any file apart from `.tex` files. Just press `CTRL + SHIFT + P` and search for `Grammarly: Check text`.
+
+This editor uses Grammarly Free account to check grammar and spelling. However if you want to use your Grammarly Premium account, simply press `CTRL + SHIFT + P` and search for `Grammarly: Login / Connect your account`.
+
+
 ## Live Collaboration
 
 Just click on the **Live Share** Sidebar button and you are good to go
