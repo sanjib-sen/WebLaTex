@@ -48,6 +48,10 @@
 					"-output-directory=PDF", // to change the output directory
 					"%DOC%"
 				],
+				// Remove / comment the next 3 lines to remove dark view for pdf
+				"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewwer
+				"latex-workshop.view.pdf.color.dark.pageColorsForeground":"#FFFFFF", // For Dark Viewer
+				"latex-workshop.view.pdf.color.dark.backgroundColor":"#171717", // For Dark Viewer
 				"editor.formatOnSave": true,
 				"latex-workshop.latex.pdfWatch.delay": 500,
 				"latex-workshop.latex.watch.delay": 500,

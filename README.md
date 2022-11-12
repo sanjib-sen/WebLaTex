@@ -17,6 +17,7 @@
   - [To use with LuaLatex or any other Tex program](#to-use-with-lualatex-or-any-other-tex-program)
   - [Grammarly](#grammarly)
   - [Live Collaboration](#live-collaboration)
+  - [PDF Viewer Dark Mode](#pdf-viewer-dark-mode)
   - [Configuration](#configuration)
   - [More Features and Configuration](#more-features-and-configurations)
   - [Contribution](#contribution)
@@ -112,20 +113,29 @@ This editor uses Grammarly Free account to check grammar and spelling. However i
 Just click on the **Live Share** Sidebar button and you are good to go
   ![Collaboration](images/collaborate.png)
 
+## PDF Viewer Dark Mode
+
+The pdf viewer will preview the pdf in Dark Mode by default if your Operating System is in Dark Mode. To view the pdf in Normal mode in os-wide dark mode just remove or comment these lines from `./.devcontainer/devcontainer.json`.
+
+  ```json
+    "latex-workshop.view.pdf.color.dark.pageColorsBackground":"#171717",
+    "latex-workshop.view.pdf.color.dark.pageColorsForeground":"#FFFFFF",
+    "latex-workshop.view.pdf.color.dark.backgroundColor":"#171717",
+  ```
+
 ## Configuration
 
 - To change the output directory change the following properties in `./.devcontainer/devcontainer.json`
 
     ```json
     "latex-workshop.latex.outDir": "<YourDirectoryName>",
-    ...
-    "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>",..],
+    "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>",],
     ```
 
 - If you do not need the Live Collaboration at all, you can just **remove** the `"ms-vsliveshare.vsliveshare"` extension from the extension list in `./.devcontainer/devcontainer.json`
 
     ```json
-    "extensions": [..,"ms-vsliveshare.vsliveshare"]
+    "extensions": ["ms-vsliveshare.vsliveshare",]
     ```
 
 - Other configurations (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check the [Wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
