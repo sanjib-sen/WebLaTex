@@ -5,7 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Users%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network)
 [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
-> A complete alternative for Overleaf with VSCode + Web + Git Integration + Live Collaboration Support
+> A complete alternative for Overleaf with VSCode + Web + Git Integration + Grammarly + Live Collaboration Support
 
 - [The WebLatex](#the-weblatex)
   - [Screenshot](#screenshot)
@@ -15,6 +15,7 @@
   - [Where is my PDF?](#where-is-my-pdf)
   - [Editor Instructions](#editor-instructions)
   - [To use with LuaLatex or any other Tex program](#to-use-with-lualatex-or-any-other-tex-program)
+  - [Grammarly](#grammarly)
   - [Live Collaboration](#live-collaboration)
   - [Configuration](#configuration)
   - [More Features and Configuration](#more-features-and-configurations)
@@ -29,15 +30,17 @@
 
 ## Why
 
-Do you use latex as your Resume builder / Research Project / Documentation / Article or any Documentation? Then you probably sometime wondered in your life if you could use the advantages of git. You could just commit your changes and roll back to older versions anytime you like. When writing a journal, you suddenly remembered you need the section that you deleted earlier. What will you do?
+Do you use latex as your Resume builder / Research Project / Documentation / Article or any Documentation? Then you probably sometimes wondered in your life if you could use the advantages of git. You could just commit your changes and roll back to older versions anytime you like. When writing a journal, you suddenly remembered you need the section that you deleted earlier. What will you do?
 
-Haven't it occured to you that if only you could use your favorite editor VSCode to write your documents? With all the settings you configured, themes you liked and the extensions you probably prefer over your toxic girlfriend?
+Hasn't it occurred to you that if only you could use your favorite editor VSCode to write your documents? With all the settings you configured, themes you liked and the extensions you probably prefer over your toxic girlfriend?
 
-Think of a moment, your thesis supervisor and co-supervisor wanted to make some changes to your document. What you will do? Email them your document and tell him to reply the updated version? This is no 80's.
+Think of a moment, your thesis supervisor and co-supervisor wanted to make some changes to your document. What you will do? Email them your document and tell them to reply with the updated version? This is no 80's.
 
 Or, you are in your car, away from your Laptop / Desktop. Suddenly remember you forgot to change the title of your document from "Loren Ipsum" to your actual document title. Won't it be great to modify your document On the Go with your phone? Or in a nerdy way, Apple Watch?
 
-**Yes! You can do all of these things now with Git, GitHub, Full VSCode Integration, Live Collaboration and Web Support - The WebLatex.**
+And do I need to tell you about the usefulness of [Grammarly](https://www.grammarly.com/)?
+
+**Yes! You can do all of these things now with Git, GitHub, Full VSCode Integration, Grammarly, Live Collaboration and Web Support - The WebLatex.**
 
 ### Just use overleaf
 
@@ -86,9 +89,27 @@ For example, to use **`LuaLatex`**:
 %!TEX program = lualatex
 ```
 
+## Grammarly
+
+This editor has built-in Grammarly support for `.tex` files. If you want to use Grammarly for other files, Go to `./.devcontainer/devcontainer.json` and add your file extension in the
+
+  ```json
+    "grammarly.files.include": ["*.md", ".YourFileExtension"]
+  ```
+And in case you do not want to use Grammarly for other files, add your file extension in the
+
+  ```json
+    "grammarly.files.exclude": ["*.md", ".YourFileExtension"]
+  ```
+
+You can use Grammarly in any file apart from `.tex` files. Just press `CTRL + SHIFT + P` and search for `Grammarly: Check text`.
+
+This editor uses Grammarly Free account to check grammar and spelling. However if you want to use your Grammarly Premium account, simply press `CTRL + SHIFT + P` and search for `Grammarly: Login / Connect your account`.
+
+
 ## Live Collaboration
 
-Just Click on the **Live Share** Sidebar button and you are good to go
+Just click on the **Live Share** Sidebar button and you are good to go
   ![Collaboration](images/collaborate.png)
 
 ## Configuration
@@ -107,7 +128,7 @@ Just Click on the **Live Share** Sidebar button and you are good to go
     "extensions": [..,"ms-vsliveshare.vsliveshare"]
     ```
 
-- Other configuration (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check 
+- Other configurations (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check the [Wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
 
 ## More Features and Configurations
 
@@ -116,7 +137,7 @@ There are a lot of features like
 - [Intellisense (Citation, References)](https://github.com/James-Yu/LaTeX-Workshop/wiki/Intellisense)
 - [Snippet and SHortcuts](https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets)
 - [Linting](https://github.com/James-Yu/LaTeX-Workshop/wiki/Linters)
-- [Formating](https://github.com/James-Yu/LaTeX-Workshop/wiki/Format)
+- [Formatting](https://github.com/James-Yu/LaTeX-Workshop/wiki/Format)
 - [Code Folding](https://github.com/James-Yu/LaTeX-Workshop/wiki/ExtraFeatures#code-folding)
 
 And a lot [more](https://github.com/James-Yu/LaTeX-Workshop/wiki/ExtraFeatures).
@@ -125,12 +146,13 @@ All of the features and configurations can be found [here](https://github.com/Ja
 
 ## Contribution
 
-I am open to and actually request you to contribute in this project. You can just Create a new issue to let me know about your concern / requests or just send a pull request with your desired changes.
+I am open to and request you to contribute to this project. You can just Create a new issue to let me know about your concern/requests or just send a pull request with your desired changes.
 
 ## Credits
 
-- @James-Yu 's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the latex support.
+- @James-Yu 's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the Latex support.
 - [qmcgaw/latexdevcontainer](https://hub.docker.com/r/qmcgaw/latexdevcontainer) For Latex compilation.
+- @znck 's [Grammarly](https://github.com/znck/grammarly) for Grammarly support.
 
 ## What's Next
 
