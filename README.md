@@ -96,6 +96,7 @@ This editor has built-in Grammarly support for `.tex` files. If you want to use 
   ```json
     "grammarly.files.include": ["*.md", ".YourFileExtension"]
   ```
+
 And in case you do not want to use Grammarly for other files, add your file extension in the
 
   ```json
@@ -105,7 +106,6 @@ And in case you do not want to use Grammarly for other files, add your file exte
 You can use Grammarly in any file apart from `.tex` files. Just press `CTRL + SHIFT + P` and search for `Grammarly: Check text`.
 
 This editor uses Grammarly Free account to check grammar and spelling. However if you want to use your Grammarly Premium account, simply press `CTRL + SHIFT + P` and search for `Grammarly: Login / Connect your account`.
-
 
 ## Live Collaboration
 
