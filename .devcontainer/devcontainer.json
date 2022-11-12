@@ -52,10 +52,10 @@
 				"latex-workshop.latex.pdfWatch.delay": 500,
 				"latex-workshop.latex.watch.delay": 500,
 				"latex-workshop.codespaces.portforwarding.openDelay": 20000,
-				// Uncomment the following to exclude .md files from grammarly checker.
-				// "grammarly.files.include": [
-				// 	"*.md"
-				// ],
+				// Remove the following to check .md files with Grammarly.
+				"grammarly.files.exclude": [
+					"*.md"
+				],
 				"grammarly.selectors": [
 					{
 						"language": "latex",

@@ -91,10 +91,15 @@ For example, to use **`LuaLatex`**:
 
 ## Grammarly
 
-This editor has built-in Grammarly support for `.tex` and `md` files. If you want to use Grammarly for other files, Go to `./.devcontainer/devcontainer.json` and add your file extension in the
+This editor has built-in Grammarly support for `.tex` files. If you want to use Grammarly for other files, Go to `./.devcontainer/devcontainer.json` and add your file extension in the
 
   ```json
-    "grammarly.files.include": ["*.tex", ".YourFileExtension"]
+    "grammarly.files.include": ["*.md", ".YourFileExtension"]
+  ```
+And in case you do not want to use Grammarly for other files, add your file extension in the
+
+  ```json
+    "grammarly.files.exclude": ["*.md", ".YourFileExtension"]
   ```
 
 ## Live Collaboration
