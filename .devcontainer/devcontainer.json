@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
 {
 	"name": "Ubuntu",
-	"image": "qmcgaw/latexdevcontainer:latest-full",
+	"image": "sanjibsen/texlive-thin",
 	"remoteUser": "root", // Do not change this
 	"features": {},
 	"customizations": {
