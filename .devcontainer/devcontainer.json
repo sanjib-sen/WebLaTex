@@ -1,8 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
 {
-	"name": "Ubuntu",
-	"image": "qmcgaw/latexdevcontainer:latest-full",
+	"name": "weblatex",
+	"image": "danteev/texlive:latest", // https://github.com/dante-ev/docker-texlive
 	"remoteUser": "root", // Do not change this
 	"features": {},
 	"customizations": {
@@ -50,8 +50,8 @@
 				],
 				// Remove / comment the next 3 lines to remove dark view for pdf
 				"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewwer
-				"latex-workshop.view.pdf.color.dark.pageColorsForeground":"#FFFFFF", // For Dark Viewer
-				"latex-workshop.view.pdf.color.dark.backgroundColor":"#171717", // For Dark Viewer
+				"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
+				"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", // For Dark Viewer
 				"editor.formatOnSave": true,
 				"latex-workshop.latex.pdfWatch.delay": 500,
 				"latex-workshop.latex.watch.delay": 500,

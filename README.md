@@ -39,6 +39,8 @@ Think of a moment, your thesis supervisor and co-supervisor wanted to make some 
 
 Or, you are in your car, away from your Laptop / Desktop. Suddenly remember you forgot to change the title of your document from "Loren Ipsum" to your actual document title. Won't it be great to modify your document On the Go with your phone? Or in a nerdy way, Apple Watch?
 
+What if you could format your latex codes, automatically, after each save?
+
 And do I need to tell you about the usefulness of [Grammarly](https://www.grammarly.com/)?
 
 **Yes! You can do all of these things now with Git, GitHub, Full VSCode Integration, Grammarly, Live Collaboration and Web Support - The WebLatex.**
@@ -49,7 +51,7 @@ Yes, but
 
 - In overleaf, you have to pay 40$ to get the git feature which isn't even have the best or full git experience.
 - Pay 40$ to collaborate with more than 1 person
-- No VSCode
+- No VSCode, Code formatting, Grammarly, Or Dark Mode / Customization
 
 ## Installation Instructions
 
@@ -74,7 +76,7 @@ Generated PDFs will be saved to **`/PDF`** directory
 4. You can see all the error logs in the **Terminal > Output > Latex Compiler** as well as in the Latex Workshop sidebar
 5. If it shows **Error showing PDF** or in case of any inconvenience, just reload the browser or press `Ctrl+R`
 6. **Just use it as you use Visual Studio Code**
-7. Do not delete the `devcontainer.json` file.
+7. Do not delete the `devcontainer.json` file. However you can edit the properties there to customize many things!
 
 ## To use with LuaLatex or any other Tex program
 
@@ -145,7 +147,7 @@ The pdf viewer will preview the pdf in Dark Mode by default if your Operating Sy
 There are a lot of features like
 
 - [Intellisense (Citation, References)](https://github.com/James-Yu/LaTeX-Workshop/wiki/Intellisense)
-- [Snippet and SHortcuts](https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets)
+- [Snippet and Shortcuts](https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets)
 - [Linting](https://github.com/James-Yu/LaTeX-Workshop/wiki/Linters)
 - [Formatting](https://github.com/James-Yu/LaTeX-Workshop/wiki/Format)
 - [Code Folding](https://github.com/James-Yu/LaTeX-Workshop/wiki/ExtraFeatures#code-folding)
@@ -160,13 +162,13 @@ I am open to and request you to contribute to this project. You can just Create 
 
 ## Credits
 
-- @James-Yu 's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the Latex support.
-- [qmcgaw/latexdevcontainer](https://hub.docker.com/r/qmcgaw/latexdevcontainer) For Latex compilation.
-- @znck 's [Grammarly](https://github.com/znck/grammarly) for Grammarly support.
+- @James-Yu's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the Latex support.
+- [danteev/texlive](https://github.com/dante-ev/docker-texlive) For Latex compilation.
+- @znck's [Grammarly](https://github.com/znck/grammarly) for Grammarly support.
 
 ## What's Next
 
-1. Will optimize the backend to decrease installation time and PDF showing time for the first time
+1. Will optimize the backend to decrease installation time and PDF showing time for the first time 
 2. Documentation
 3. Release: Export PDF as a release version
 4. You tell me
