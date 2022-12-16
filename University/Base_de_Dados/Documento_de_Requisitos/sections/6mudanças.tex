@@ -1,0 +1,11 @@
+\section{Mudanças realizadas em relação a segunda entrega}
+Para continuar com a terceira e última parte do projeto foram adequados os mapeamentos realizados para as tabelas Terceiros, Frente, Auxiliado, Centro Comunitário e Funcionário.
+
+As alterações realizadas em Centro Comunitário e Funcionário foram para viabilizar a inserção de tuplas em suas respectivas tabelas, anteriormente o atributo presidente era chave secundária não nula em Centro Comunitário e o atributo CentroComunitario em Funcionário não poderia receber valores nulos. Isto condicionava uma inserção a outra, e.g, não era possível realizar inserções de tuplas em Centro Comunitário sem que antes tivesse sido inserida uma tupla na tabela Funcionário, ao passo que não era possível inserir uma tupla na tabela Funcionário em que antes fosse inserida uma tupla em Centro Comunitário, formando uma interdependência que não permitia nenhuma inserção sem valores \textit{default}. Isso foi resolvido retirando a obrigatoriedade de existir um valor não nulo no atributo CentroComunitario em Funcionário.
+
+Como em Terceiro e Frente nós temos generalizações disjuntas, i.e,  os atributos que definem as entidades específicas destas tabelas são necessariamente mono valorados, não é eficiente criar uma tabela de controle para manter exclusivamente os tipos, isto acarreta na realização de um maior número de buscas e prejudica a escalabilidade da base de dados construída. 
+
+Destarte, foram incluídos nestas tabelas atributos Tipo, que definem a qual entidade específica a tupla da entidade geral se refere. Isso pode vir a acarretar problemas como excesso de nulos de forma geral, pois não se trata de uma especialização total, entretanto em nossa aplicação é improvável que isto ocorra.
+
+Ademais, como estamos tratando de uma generalização em \textit{overlap} para a tabela do Auxiliado, o atributo de definição de Tipo deve ser multi valorado e, portanto, deve se relacionar a chave primária através de uma tabela de controle, cujo a chave consiste na composição entre este atributo e a chave primária referente a Auxiliado.
+

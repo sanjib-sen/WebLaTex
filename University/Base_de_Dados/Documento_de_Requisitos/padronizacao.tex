@@ -1,0 +1,121 @@
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-list=5]{abntex2cite} % Padrao de citacao alfabetico e com destaque em negrito
+\usepackage{amsmath}
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			% Lista de simbolos
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{enumitem}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{verbatim}
+\usepackage{dsfont}
+\usepackage{textcomp}
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+\usepackage[normalem]{ulem} 
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{array}
+\usepackage{pst-3dplot}
+\usepackage[bottom=2.5cm,a4paper,hmargin={3cm,2cm}]{geometry}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\hypersetup{hidelinks,
+            linkcolor = blue} % Changes the link color to black and hides the hideous red border that usually is created
+   
+
+
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{%
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or%
+		Citado na página #2.%
+	\else%
+		Citado #1 vezes nas páginas #2.%
+	\fi%
+}%
+% ---
+
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={TCC}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=black,      		% color of file links
+		urlcolor=black,
+		bookmarksdepth=4
+}
+\makeatother
+
+
+
+\addto\captionsbrazil{
+\renewcommand{\anexosname}{\textbf{ANEXOS}}
+\renewcommand{\apendicesname}{\textbf{APÊNDICES}}
+\renewcommand{\bibname}{Refer\^encias Bibliográficas}
+}
+
+% -----------------------------------------------------------------------------
+% CONFIGURACAO DO SUMARIO
+% -----------------------------------------------------------------------------
+
+\setlength\cftbeforechapterskip{0pt}
+
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+%\setboolean{ABNTEXupperchapter}{false}
+
+
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\itshape}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\cftsubsectionfont}{\normalfont}
+\renewcommand{\cftsubsectionfont}{\itshape}
+%\renewcommand{\tocheadstart}{\ABNTEXchapterfont}
+\renewcommand{\tocheadstart}{\ABNTEXsectionfont}
+
+\DeclareMathOperator{\sen}{sen}
+%\renewcommand{\ABNTchapterfont}{\bfseries}
+
+ 
+ 
+\makepagestyle{meuestilo}
+\makeevenhead{meuestilo}{\ABNTEXfontereduzida\thepage}{}{}
+\makeoddhead{meuestilo}{}{}{\ABNTEXfontereduzida\thepage}
+
+
+\renewcommand{\bibsection}{%
+    \chapter*{\bibname}
+    \bibmark
+    \ifnobibintoc\else
+    \phantomsection
+    \addcontentsline{toc}{chapter}{{\bibname}}
+    \fi
+    \prebibhook
+}
+
+ 
+% Coloca a citação de equação, \autoref{label}, no formato Equação (2.1)
+%\def\equationautorefname~#1\null{Equa\c c\~ao~(#1)\null}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %  
+ 

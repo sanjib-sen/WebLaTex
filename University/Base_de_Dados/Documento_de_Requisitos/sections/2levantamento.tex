@@ -1,0 +1,69 @@
+\section{Levantamento de requisitos}
+
+\subsection{Descrição da aplicação prática da base de dados}
+A entidade principal desta base será o \textbf{auxiliado}, representando o \textbf{morador de rua} e/ou \textbf{dependente químico} assistido, pois ele será o ponto focal do projeto, o qual possui todos os identificadores comuns de um cidadão brasileiro como \textbf{CPF}, desta forma o \textbf{funcionário} da ação social poderá registrar todas as informações pessoais e específicas através desta chave identificadora, e.g, algum tipo de formação ou \textbf{habilidade} profissional, \textbf{idade}, a qual será um atributo derivado de \textbf{Data de nascimento}, \textbf{sexo}, \textbf{nome} e, caso aplicável, \textbf{local} de moradia fixo. Isto é feito para que as \textbf{frentes} do projeto consigam se organizar a fim de encaminhar o \textbf{auxiliado} para os programas de \textbf{reestruturação profissional} em \textbf{empresas parceiras} e de \textbf{reestruturação social} em \textbf{clínicas} com sensibilidade geográfica, de faixa etária e de lotação das instituições pois elas possuem um \textbf{número máximo de pacientes e funcionários}, a fim de funcionar corretamente e promover uma reerguida confortável aos auxiliados. Ademais, a generalização feita através desta entidade faz com que ocorra uma simplificação quando é necessário atribuir os \textbf{auxiliados} a programas focalizados, referenciando apenas as entidades específicas \textbf{dependente químico} e \textbf{morador de rua}, possibilitando a classificação de ambos através do atributo multi-valorado \textbf{tipo}.
+
+As instalações físicas da ação com \textbf{local} fixo, chamadas de \textbf{centros comunitários}, são pontos organizacionais que se encarregam de administrar o próprio fluxo financeiro através do atributo \textbf{caixa}, representando todo o dinheiro atualmente em posse do \textbf{centro comunitário}. Todo centro tem o próprio \textbf{presidente}, representado pela relação \textbf{preside} entre \textbf{funcionário} e \textbf{centro comunitário}, seus funcionários participantes representados pela relação \textbf{participa}, \textbf{CNPJ} único e as frentes que são administradas por ele. De forma que, cada \textbf{centro comunitário} realiza seus próprios eventos beneficentes com \textbf{data}, \textbf{hora} e \textbf{local} específicos, além de campanhas de subsídio de produtos de uso pessoal através da \textbf{tesouraria}. 
+
+Os casos de dependência química são tratados através da internação não compulsória do auxiliado em \textbf{clínicas} parceiras que promovam programas de \textbf{reabilitação}, caso ela aconteça se faz interessante manter a \textbf{presença} do \textbf{auxiliado}, assim como a \textbf{data} de início do tratamento. Por questões organizacionais e de respaldo legal, toda \textbf{clínica} deve ter um \textbf{CNPJ} válido, um \textbf{nome} e ter em registro seu \textbf{número total de funcionários e pacientes}(atributos \textbf{NuFuncionarios} e \textbf{NuPacientes}), vale ressaltar que a \textbf{clínica} não recebe somente pacientes dos \textbf{centros comunitários}.
+
+Todos os \textbf{auxiliados} tem a possibilidade de ingressar em um esquema de \textbf{emprego supervisionado} caso queiram, estes acordos são firmados entre os ingressantes e as \textbf{empresas parceiras} com a ajuda da frente de \textbf{reestruturação profissional}. Os auxiliados são contratados caso o numero máximo de funcionários (atributo \textbf{MaxFuncionarios}) das empresas parceiras seja diferente do número atual de funcionários (atributo \textbf{NuFuncionarios}) e conforme o interesse da empresa.
+
+O projeto possui acordo com ONG's, que oferecem especificamente alojamento temporário para os \textbf{moradores de rua} assistidos pelo projeto, representado pelo relacionamento \textbf{aloja}. Além das relações específicas dos \textbf{terceiros} supracitadas, todas as especificações desta classe generalizada, incluindo qualquer \textbf{pessoa física} (funcionário ou não), podem realizar doações para os centros, podendo ser \textbf{monetárias} ou de \textbf{produto}, desde esta seja feita formalmente e possua uma \textbf{nota fiscal}.
+
+Os \textbf{eventos} realizados pela ação serão para recrutamento de novos \textbf{funcionários}, conscientização dos moradores da região e para divulgação e captação de novos auxiliados. Os \textbf{nomes} dos \textbf{eventos}, o \textbf{local} de realização e a \textbf{data} os identificarão em uma chave composta , i.e, ao passo que podem existir dois eventos na mesma data com o mesmo nome, presume-se que eles não estão acontecendo no mesmo local (seriam o mesmo evento duplicado).
+
+As entidades \textbf{doação}, \textbf{emprego supervisionado} e \textbf{reabilitação} foram modeladas como agregações, pois são inerentes a relações específicas dentro do MER, possuindo atributos que facilitam na organização e categorização destas relações e a criação de tabelas referentes a elas serão de extremo proveito para o futuro da base de dados.
+
+\subsection{Principais funcionalidades}
+As funcionalidades são dependentes do tipo de usuário que está acessando o banco de dados e estão discriminadas abaixo para cada um deles.
+\begin{itemize}
+    \item Empresa parceira
+        \begin{enumerate}
+            \item Registra vagas de emprego supervisionado, as administra e modifica;
+            \item Consulta a listagem de auxiliados, em específico os atributos habilidade e local;
+            \item Registra e altera seu número máximo e atual de funcionários;
+            \item Consulta a listagem de doações realizadas.
+        \end{enumerate}
+
+        
+    \item Clínica
+        \begin{enumerate}
+            \item Registra e administra o número máximo e atual de pacientes;
+            \item Registra as possíveis vagas para a reabilitação e os programas de reabilitação;
+            \item Atualiza a presença dos pacientes nos próprios programas de reabilitação;
+            \item Consulta a listagem de dependentes, em específico as características relevantes para a definição da saúde deles, como a idade e seus vícios;
+        \end{enumerate}
+
+        
+    \item Funcionário
+        \begin{enumerate}
+            \item Registra terceiros e atualiza suas informações;
+            \item Registra empresas parceiras e atualiza suas informações;
+            \item Registra novos eventos, novas campanhas de divulgação para estes e os administra;
+            \item Consulta a listagem de todas as instâncias das demais entidades;
+            \item Registra novas doações;
+            \item Registra e administra informações dos pontos físicos e administrativos de atendimento (centros comunitários)
+            \item Realiza atribuição e administração das frentes de cada centro, além de listar os funcionários atribuídos em cada frente
+        \end{enumerate}
+
+    \item ONG
+        \begin{enumerate}
+            \item Registro de vagas de alojamento;
+            \item Consulta a listagem de auxiliados.
+        \end{enumerate}
+\end{itemize}
+
+\subsection{Análise de inconsistências}
+\begin{itemize}
+    \item \textbf{Ciclo Funcionário} $\xrightarrow[]{}$ \textbf{\textbf{Centro comunitário}} $\xrightarrow[]{}$ \textbf{Funcionário}
+    
+    Através das relações \textbf{preside} e \textbf{participa} forma-se um ciclo entre \textbf{funcionário} e \textbf{centro} \textbf{comunitário}, a possível inconsistência neste caso se dá caso um \textbf{funcionário} venha a presidir um \textbf{centro} \textbf{comunitário} que ele não faz parte, o que não se encaixaria no funcionamento idealizado do projeto. Quanto ao ciclo, poderia ser substituído ao definir-se um atributo "função" dentro da relação de "participa". A nossa abordagem visou garantir um maior destaque ao presidente, caso em algum momento note-se ações/funções que apenas ele poderia exercer.
+    \item \textbf{Possível inconsistência no número de funcionários por frente}
+    
+    É necessário que pelo menos um \textbf{funcionário} participe de cada frente, entretanto é necessário dentro da aplicação real que o funcionário seja atribuído administrativamente a um \textbf{centro comunitário} pois as frentes, como conceito abstrato puramente organizacional, não possuem informações geográficas.
+    
+\end{itemize}
+
+\newpage
+

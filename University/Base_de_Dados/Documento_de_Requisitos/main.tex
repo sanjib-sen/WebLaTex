@@ -1,0 +1,89 @@
+\documentclass[article,	12pt, oneside, 	a4paper, english, brazil
+%,sumario=tradicional
+]{abntex2}
+\linespread{1.3}
+
+\include{padronizacao}
+\usepackage{listings}
+
+
+\begin{document}
+\pagestyle{meuestilo}
+
+\begin{capa}
+
+    \begin{center}
+        {\MakeUppercase{\Large Universidade de São Paulo}}\\
+        {\MakeUppercase{\large Dep. de Ciências da Computação}}\\
+        {\MakeUppercase{\large SCC0640 - Bases de Dados}}
+
+        \vspace{2cm}
+
+        \begin{flushright}
+            Elaine Parros Machado de Souza
+        \end{flushright}
+
+
+        \vspace{4cm}
+
+        {\MakeUppercase{\large Auxílio a Dependentes Químicos e Moradores de Rua}}
+        \\[0.125cm]
+        {\MakeUppercase {\normalsize Projeto de Base de Dados - SCC0640 }}\\[3cm]
+    \end{center}
+
+    \begin{flushright}
+        {\large	Emanuel Lace Aranha, n\textdegree ~11234224}\\
+        {\large	Felipe de Alcantara Tomé, n\textdegree ~11800970}\\
+        {\large	Francisco Reis Nogueira, n\textdegree ~11954374}\\
+        {\large	Joao Augusto Fernandes Barbosa, n\textdegree ~11953348}\\
+
+    \end{flushright}
+
+    \begin{center}
+        \vfill
+        São Carlos \\
+        \the\year  % imprime o ano
+
+    \end{center}
+\end{capa}
+
+% Lista de figuras. Se o relatório não tiver figuras, colocar % no início das duas linhas a seguir
+% \pdfbookmark[0]{\listfigurename}{lof}
+% \listoffigures*
+%\cleardoublepage
+% ---
+
+\vspace{3cm}
+
+% Lista de figuras. Se o relatório não tiver tabelas, colocar % no início das duas linhas a seguir
+%\pdfbookmark[0]{\listtablename}{lot}
+%\listoftables*
+%\cleardoublepage
+
+% Lista de Conteúdo (sumário).
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+
+
+\input{sections/1intro}
+\input{sections/2levantamento}
+\input{sections/3MER.tex}
+\input{sections/4mudanças}
+\input{sections/5Relacional}
+\input{sections/6mudanças.tex}
+\input{sections/7Implementacao.tex}
+\input{sections/8Conclusão.tex}
+
+
+% se quiser que as referências fiquem na mesma página da conclusão, coloque % na linha a seguir
+\newpage
+
+%\bibliographystyle{abnt-alf}
+%\renewcommand{\refname}{REFERÊNCIAS BIBLIOGRÁFICAS}
+%\nocite{*}
+%\bibliography{biblio_rel}
+
+
+\end{document}
