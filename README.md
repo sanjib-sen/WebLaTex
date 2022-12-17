@@ -1,7 +1,7 @@
 # The WebLatex
 
 ![WebLatex](images/image.jpg)
-[![GitHub license](https://img.shields.io/github/license/sanjib-sen/WebLaTex?style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Users%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network) [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
+[![GitHub license](https://img.shields.io/github/license/sanjib-sen/WebLaTex?style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Forked%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network) [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
 > A complete alternative for Overleaf with VSCode + Web + Git Integration + Grammarly + Live Collaboration Support
 
@@ -17,7 +17,7 @@
   - [Live Collaboration](#live-collaboration)
   - [PDF Viewer Dark Mode](#pdf-viewer-dark-mode)
   - [Configuration](#configuration)
-  - [More Features and Configuration](#more-features-and-configurations)
+  - [More Features and Configurations](#more-features-and-configurations)
   - [Contribution](#contribution)
   - [Credits](#credits)
   - [What's Next](#whats-next)
@@ -53,11 +53,11 @@ Yes, but
 
 ## Installation Instructions
 
-> You can either fork this repository or just Use as a template. But you will not get latest updates if you use this as a template.
+> You can either fork this repository or just use as a template. However, you will not get latest updates if you use this as a template.
 
 1. Login or Sign Up to [GitHub](https://github.com/login)
 2. Fork this repository or just click [Here](https://github.com/sanjib-sen/weblatex/fork). Or, If you want to use as a template just Click on `Use this template` and `Create a new Repository`
-3. Give it a name and select **Create Fork**
+3. Give it a name and select **Create Fork / Create repository from template**
 4. Select **<> Code** > **CodeSpaces** > **Create Codespace on Main**
     ![tutorial](images/tutorial.gif)
 5. It will start installing. **You Have to wait for 2 mins in the first time**. After that it will take 2/3 seconds to open up
@@ -92,7 +92,19 @@ For example, to use **`LuaLatex`**:
 
 ## Grammarly
 
-This editor has built-in Grammarly support for `.tex` files. If you want to use Grammarly for other files, Go to `./.devcontainer/devcontainer.json` and add your file extension in the
+This editor has built-in [Grammarly](https://www.grammarly.com/) support for `.tex` files.
+
+To disable grammarly, you can just **remove** or **comment out** the `"ms-vsliveshare.vsliveshare"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
+
+  ```json
+   "extensions": [
+        "...",
+        //"znck.grammarly",
+        "..."
+        ]
+  ```
+
+If you want to use Grammarly for other files, Go to `./.devcontainer/devcontainer.json` and add your file extension in the
 
   ```json
     "grammarly.files.include": ["*.md", ".YourFileExtension"]
@@ -110,17 +122,30 @@ This editor uses Grammarly Free account to check grammar and spelling. However i
 
 ## Live Collaboration
 
+> All about Live Collaboration: [Click Here](https://visualstudio.microsoft.com/services/live-share/)
+
 Just click on the **Live Share** Sidebar button and you are good to go
-  ![Collaboration](images/collaborate.png)
+
+![Collaboration](images/collaborate.png)
+
+If you do not need the Live Collaboration at all, you can just **remove** or **comment out** the `"ms-vsliveshare.vsliveshare"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
+
+  ```json
+  "extensions": [
+      "...",
+      // "ms-vsliveshare.vsliveshare",
+      "..."
+    ]
+  ```
 
 ## PDF Viewer Dark Mode
 
-The pdf viewer will preview the pdf in Dark Mode by default if your Operating System is in Dark Mode. To view the pdf in Normal mode in os-wide dark mode just remove or comment these lines from `./.devcontainer/devcontainer.json`.
+The pdf viewer will preview the pdf in Dark Mode by default if your Operating System is in Dark Mode. To view the pdf in Normal mode in os-wide dark mode just **remove or comment** these lines from `./.devcontainer/devcontainer.json`.
 
   ```json
-    "latex-workshop.view.pdf.color.dark.pageColorsBackground":"#171717",
-    "latex-workshop.view.pdf.color.dark.pageColorsForeground":"#FFFFFF",
-    "latex-workshop.view.pdf.color.dark.backgroundColor":"#171717",
+    //"latex-workshop.view.pdf.color.dark.pageColorsBackground":"#171717",
+    //"latex-workshop.view.pdf.color.dark.pageColorsForeground":"#FFFFFF",
+    //"latex-workshop.view.pdf.color.dark.backgroundColor":"#171717",
   ```
 
 ## Configuration
@@ -129,13 +154,7 @@ The pdf viewer will preview the pdf in Dark Mode by default if your Operating Sy
 
     ```json
     "latex-workshop.latex.outDir": "<YourDirectoryName>",
-    "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>",],
-    ```
-
-- If you do not need the Live Collaboration at all, you can just **remove** the `"ms-vsliveshare.vsliveshare"` extension from the extension list in `./.devcontainer/devcontainer.json`
-
-    ```json
-    "extensions": ["ms-vsliveshare.vsliveshare",]
+    "latex-workshop.latex.magic.args": ["-output-directory=<YourDirectoryName>"],
     ```
 
 - Other configurations (e.g. PDF Generation Delay, Auto Saving etc.) can be modified in `./.devcontainer/devcontainer.json`. Check the [Wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
