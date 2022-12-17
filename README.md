@@ -1,9 +1,13 @@
+<div align="center">
+
 # The WebLatex
 
 ![WebLatex](images/image.jpg)
 [![GitHub license](https://img.shields.io/github/license/sanjib-sen/WebLaTex?style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Forked%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network) [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
 > A complete alternative for Overleaf with VSCode + Web + Git Integration + Grammarly + Live Collaboration Support
+
+</div>
 
 - [The WebLatex](#the-weblatex)
   - [Screenshot](#screenshot)
@@ -185,7 +189,7 @@ I am open to and request you to contribute to this project. You can just Create 
 
 ## What's Next
 
-1. Will optimize the backend to decrease installation time and PDF showing time for the first time 
+1. Will optimize the backend to decrease installation time and PDF showing time for the first time
 2. Documentation
 3. Release: Export PDF as a release version
 4. You tell me
