@@ -5,7 +5,7 @@
 ![WebLatex](images/image.jpg)
 [![GitHub license](https://img.shields.io/github/license/sanjib-sen/WebLaTex?style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Forked%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network) [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
-> A complete alternative for Overleaf with VSCode + Web + Git Integration + Grammarly + Live Collaboration Support
+> A complete alternative for Overleaf with VSCode + Web + Git Integration + Grammarly/LanguageTool + Live Collaboration Support
 
 </div>
 
@@ -20,6 +20,7 @@
   - [Editor Instructions](#editor-instructions)
   - [To use with LuaLatex or any other Tex program](#to-use-with-lualatex-or-any-other-tex-program)
   - [Grammarly](#grammarly)
+  - [LanguageTools](#languagetools)
   - [Live Collaboration](#live-collaboration)
   - [PDF Viewer Dark Mode](#pdf-viewer-dark-mode)
   - [Configuration](#configuration)
@@ -45,7 +46,7 @@ Or, you are in your car, away from your Laptop / Desktop. Suddenly remember you 
 
 What if you could format your latex codes, automatically, after each save?
 
-And do I need to tell you about the usefulness of [Grammarly](https://www.grammarly.com/)?
+And do I need to tell you about the usefulness of [Grammarly](https://www.grammarly.com/) for built in grammar and spelling checker? Or [LanguageTool](https://languagetool.org)? if you prefer open-source?
 
 **Yes! You can do all of these things now with Git, GitHub, Full VSCode Integration, Grammarly, Live Collaboration and Web Support - The WebLatex.**
 
@@ -125,6 +126,28 @@ And in case you do not want to use Grammarly for other files, add your file exte
 You can use Grammarly in any file apart from `.tex` files. Just press `CTRL + SHIFT + P` and search for `Grammarly: Check text`.
 
 This editor uses Grammarly Free account to check grammar and spelling. However if you want to use your Grammarly Premium account, simply press `CTRL + SHIFT + P` and search for `Grammarly: Login / Connect your account`.
+
+## LanguageTools
+
+This editor has built-in [LanguageTool](https://languagetool.org) support for `BibTEX`, `ConTEXt`, `LATEX`, `Markdown`, `Org`, `reStructuredText`, `R Sweave`, and `XHTML` documents but **it is disabled by default in favor of grammarly**. If you want to use LanguageTool instead of grammarly, just **uncomment** the following lines from `.devcontainer/devcontainer.json`
+
+  ```json
+  "extensions": [
+      "...",
+      "valentjn.vscode-ltex",
+      "..."
+    ]
+  ```
+  
+  And the **remove** or **comment out** the `"ms-vsliveshare.vsliveshare"` extension from the extensions list in `./.devcontainer/devcontainer.json` file. (Recommended)
+
+  ```json
+  "extensions": [
+      "...",
+      // "ms-vsliveshare.vsliveshare",
+      "..."
+    ]
+  ```
 
 ## Live Collaboration
 
