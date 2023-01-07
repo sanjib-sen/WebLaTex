@@ -134,17 +134,17 @@ This editor has built-in [LanguageTool](https://languagetool.org) support for `B
   ```json
   "extensions": [
       "...",
-      "valentjn.vscode-ltex",
+      "znck.grammarly",
       "..."
     ]
   ```
   
-  And the **remove** or **comment out** the `"ms-vsliveshare.vsliveshare"` extension from the extensions list in `./.devcontainer/devcontainer.json` file. (Recommended)
+  And the **remove** or **comment out** the `"znck.grammarly"` extension from the extensions list in `./.devcontainer/devcontainer.json` file. (Recommended)
 
   ```json
   "extensions": [
       "...",
-      // "ms-vsliveshare.vsliveshare",
+      // "znck.grammarly",
       "..."
     ]
   ```
