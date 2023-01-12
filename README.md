@@ -134,7 +134,7 @@ This editor has built-in [LanguageTool](https://languagetool.org) support for `B
   ```json
   "extensions": [
       "...",
-      "znck.grammarly",
+      "valentjn.vscode-ltex",
       "..."
     ]
   ```
