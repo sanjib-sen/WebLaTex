@@ -54,7 +54,7 @@
 				"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", // For Dark Viewer
 				"editor.formatOnSave": true,
 				"latex-workshop.latex.pdfWatch.delay": 500,
-				"latex-workshop.latex.watch.delay": 500,
+ 				//"latex-workshop.latex.watch.delay": 500, // Deprecated. See here: https://github.com/sanjib-sen/WebLaTex/issues/8
 				"latex-workshop.codespaces.portforwarding.openDelay": 20000,
 				"grammarly.files.include": [
 					"**/*.tex"
