@@ -15,6 +15,7 @@
   - [Screenshot](#screenshot)
   - [Why](#why)
     - [Just use overleaf](#just-use-overleaf)
+  - [Whats New](#whats-new)
   - [Installation Instructions](#installation-instructions)
   - [Where is my PDF?](#where-is-my-pdf)
   - [Editor Instructions](#editor-instructions)
@@ -60,6 +61,11 @@ Yes, but
 - In overleaf, you have to pay 40$ to get the git feature which isn't even have the best or full git experience.
 - Pay 40$ to collaborate with more than 1 person
 - No VSCode, Code formatting, Grammarly, Or Dark Mode / Customization
+
+## Whats New
+
+- [GitHub Copilot](#github-copilot)
+- **[FIX]:** Autobuild fixes. No more annoying Error Notifications in every second.
 
 ## Installation Instructions
 
