@@ -108,7 +108,7 @@ For example, to use **`LuaLatex`**:
 
 ## GitHub Copilot
 
- Wonderful news, people! [GitHub Copilot](https://github.com/features/copilot) has been integrated with this tool, thanks to @thodson-usgs. This program will suggest the next command, sentence and paragraph based on your document and previous writings.
+ Wonderful news, people! [GitHub Copilot](https://github.com/features/copilot) has been integrated with this tool, thanks to [@thodson-hugs](https://github.com/thodson-hugs). This program will suggest the next command, sentence and paragraph based on your document and previous writings.
 
 ![GitHub Copilot](images/copilot.gif)
 
