@@ -12,7 +12,7 @@
 > I am so glad to share that, the project has been recognized globally and many people are using this tool to create their journals, research paper, and personal resume. Students, Lecturers, and Professors from universities like the University of Minnesota, University of Colorado, University of Utah, Cornell University, and even MIT Plasma Science and Fusion Center are using this tool for creating documents. A few of you personally thanked me for this project and wished to contribute in the future, which honestly I did not expect myself! Thank you again, for the limitless support!
 
 - [The WebLatex](#the-weblatex)
-  - [Screenshot](#screenshot)
+  - [Preview](#preview)
   - [Why](#why)
     - [Just use overleaf](#just-use-overleaf)
   - [Whats New](#whats-new)
@@ -32,9 +32,9 @@
   - [What's Next](#whats-next)
   - [Contact](#contact)
 
-## Screenshot
+## Preview
 
-![Screenshot](images/intro.mp4)
+[Video](https://user-images.githubusercontent.com/54777542/224487221-ea13cede-e1d6-4654-b76b-d368bc1ff11e.mp4)
 
 ## Why
 
