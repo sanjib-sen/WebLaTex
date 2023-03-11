@@ -34,7 +34,7 @@
 
 ## Screenshot
 
-![Screenshot](images/intro.gif)
+![Screenshot](images/intro.mp4)
 
 ## Why
 
