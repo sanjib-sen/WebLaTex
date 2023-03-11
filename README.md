@@ -19,6 +19,7 @@
   - [Where is my PDF?](#where-is-my-pdf)
   - [Editor Instructions](#editor-instructions)
   - [To use with LuaLatex or any other Tex program](#to-use-with-lualatex-or-any-other-tex-program)
+  - [GitHub Copilot](#github-copilot)
   - [Grammarly](#grammarly)
   - [LanguageTools](#languagetools)
   - [Live Collaboration](#live-collaboration)
@@ -32,7 +33,7 @@
 
 ## Screenshot
 
-![Screenshot](images/screenshot.png)
+![Screenshot](images/intro.gif)
 
 ## Why
 
@@ -45,6 +46,8 @@ Think of a moment, your thesis supervisor and co-supervisor wanted to make some 
 Or, you are in your car, away from your Laptop / Desktop. Suddenly remember you forgot to change the title of your document from "Loren Ipsum" to your actual document title. Won't it be great to modify your document On the Go with your phone? Or in a nerdy way, Apple Watch?
 
 What if you could format your latex codes, automatically, after each save?
+
+And most importantly, what if you could use [GitHub Copilot](https://github.com/features/copilot) to automatically complete your latex commands and sentences? Forget the command for a thing? No worry, this tool will guess what could be the next command and will suggest that to you in each step. Not only it complete and suggest commands, but also the full sentence, and Paragraphs! Can you imaging how powerful you can be with this tool?
 
 And do I need to tell you about the usefulness of [Grammarly](https://www.grammarly.com/) for built in grammar and spelling checker? Or [LanguageTool](https://languagetool.org)? if you prefer open-source?
 
@@ -96,6 +99,22 @@ For example, to use **`LuaLatex`**:
 ```tex
 %!TEX program = lualatex
 ```
+
+## GitHub Copilot
+
+ Wonderful news, people! [GitHub Copilot](https://github.com/features/copilot) has been integrated with this tool, thanks to @thodson-usgs. This program will suggest the next command, sentence and paragraph based on your document and previous writings.
+
+![GitHub Copilot](images/copilot.gif)
+
+To turn this off just **remove** or **comment out** the `"GitHub.copilot"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
+
+  ```json
+   "extensions": [
+        "...",
+        //"GitHub.copilot",
+        "..."
+        ]
+  ```
 
 ## Grammarly
 
