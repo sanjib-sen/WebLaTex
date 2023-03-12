@@ -39,7 +39,7 @@
 
 ## Preview
 
-![Video Preview](https://user-images.githubusercontent.com/54777542/224549577-1c5e0b5f-c544-4fdf-a79e-25655483e2da.mp4)
+[Video Preview](https://user-images.githubusercontent.com/54777542/224549577-1c5e0b5f-c544-4fdf-a79e-25655483e2da.mp4)
 
 ## Why
 
@@ -80,7 +80,7 @@ Yes, but
 > You can either fork this repository or just use as a template. You will not get latest updates if you use this as a template. And you can only fork once. So, I will recommend this to use as a template and check for updates manually.
 
 1. Login or Sign Up to [GitHub](https://github.com/login)
-2. . Or, If you want to use as a template
+2. Use this as template or Fork.
 
     - **Use as Template (Recommended):** just Click on `Use this template` and `Create a new Repository` or just      [Click Here](https://github.com/sanjib-sen/weblatex/generate)
     
