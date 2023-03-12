@@ -6,11 +6,11 @@
 
 [![GitHub license](https://img.shields.io/github/license/sanjib-sen/WebLaTex?style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Forked%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network) [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
-<a href="https://www.producthunt.com/posts/weblatex?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-weblatex" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=383518&theme=dark" alt="WebLaTeX - A&#0032;LaTeX&#0032;editor&#0032;with&#0032;Git&#0044;&#0032;VSCode&#0044;&#0032;Copilot&#0044;&#0032;Grammarly&#0032;and&#0032;more | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/weblatex?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-weblatex" target="_blank" rel="noreferrer noopener"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=383518&theme=dark" alt="WebLaTeX - A&#0032;LaTeX&#0032;editor&#0032;with&#0032;Git&#0044;&#0032;VSCode&#0044;&#0032;Copilot&#0044;&#0032;Grammarly&#0032;and&#0032;more | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
   
 > A complete alternative for Overleaf with VSCode + Web + Git Integration + GitHub Copilot + Grammarly/LanguageTool + Live Collaboration Support
 
-<a href="https://github.com/sanjib-sen/weblatex/generate" target="_blank"> ![get-started](https://user-images.githubusercontent.com/54777542/224549654-6f2dc0ad-54e0-4827-b316-ebe264dbf007.svg)</a>
+<a href="https://github.com/sanjib-sen/weblatex/generate" target="_blank" rel="noreferrer noopener"> ![get-started](https://user-images.githubusercontent.com/54777542/224549654-6f2dc0ad-54e0-4827-b316-ebe264dbf007.svg)</a>
 
 </div>
 
