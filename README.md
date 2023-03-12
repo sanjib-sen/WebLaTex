@@ -2,12 +2,15 @@
 
 # The WebLatex
 
-![WebLatex](images/image.jpg)
+![image](https://user-images.githubusercontent.com/54777542/224550592-657a2f4e-bd46-4f11-85af-e9b299650434.jpg)
+
 [![GitHub license](https://img.shields.io/github/license/sanjib-sen/WebLaTex?style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/blob/main/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/sanjib-sen/WebLaTex?color=orange&label=Forked%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/network) [![GitHub stars](https://img.shields.io/github/stars/sanjib-sen/WebLaTex?color=red&label=Loved%20%F0%9F%92%96&style=for-the-badge)](https://github.com/sanjib-sen/WebLaTex/stargazers)
 
 <a href="https://www.producthunt.com/posts/weblatex?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-weblatex" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=383518&theme=dark" alt="WebLaTeX - A&#0032;LaTeX&#0032;editor&#0032;with&#0032;Git&#0044;&#0032;VSCode&#0044;&#0032;Copilot&#0044;&#0032;Grammarly&#0032;and&#0032;more | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
   
 > A complete alternative for Overleaf with VSCode + Web + Git Integration + GitHub Copilot + Grammarly/LanguageTool + Live Collaboration Support
+
+<a href="https://github.com/sanjib-sen/weblatex/generate" target="_blank"> ![get-started](https://user-images.githubusercontent.com/54777542/224549654-6f2dc0ad-54e0-4827-b316-ebe264dbf007.svg)</a>
 
 </div>
 
@@ -36,7 +39,7 @@
 
 ## Preview
 
-[Video](https://user-images.githubusercontent.com/54777542/224487221-ea13cede-e1d6-4654-b76b-d368bc1ff11e.mp4)
+![Video Preview](https://user-images.githubusercontent.com/54777542/224549577-1c5e0b5f-c544-4fdf-a79e-25655483e2da.mp4)
 
 ## Why
 
@@ -72,13 +75,23 @@ Yes, but
 
 ## Installation Instructions
 
-> You can either fork this repository or just use as a template. However, you will not get latest updates if you use this as a template.
+<a href="https://github.com/sanjib-sen/weblatex/generate" target="_blank"> ![get-started](https://user-images.githubusercontent.com/54777542/224549654-6f2dc0ad-54e0-4827-b316-ebe264dbf007.svg)</a>
+
+> You can either fork this repository or just use as a template. You will not get latest updates if you use this as a template. And you can only fork once. So, I will recommend this to use as a template and check for updates manually.
 
 1. Login or Sign Up to [GitHub](https://github.com/login)
-2. Fork this repository or just click [Here](https://github.com/sanjib-sen/weblatex/fork). Or, If you want to use as a template just Click on `Use this template` and `Create a new Repository`
+2. . Or, If you want to use as a template
+
+    - **Use as Template (Recommended):** just Click on `Use this template` and `Create a new Repository` or just      [Click Here](https://github.com/sanjib-sen/weblatex/generate)
+    
+    Or,
+    
+    - **Fork:** Fork this repository or just [Click Here](https://github.com/sanjib-sen/weblatex/fork)
+    
 3. Give it a name and select **Create Fork / Create repository from template**
 4. Select **<> Code** > **CodeSpaces** > **Create Codespace on Main**
-    ![tutorial](images/tutorial.gif)
+    ![tutorial](https://user-images.githubusercontent.com/54777542/224550678-32a949ae-3a9b-4e8d-a0f1-ad30ec429908.gif)
+
 5. It will start installing. **You Have to wait for 2 mins in the first time**. After that it will take 2/3 seconds to open up
 
 ## Where is my PDF?
@@ -113,7 +126,7 @@ For example, to use **`LuaLatex`**:
 
  Wonderful news, people! [GitHub Copilot](https://github.com/features/copilot) has been integrated with this tool, thanks to [@thodson-hugs](https://github.com/thodson-hugs). This program will suggest the next command, sentence and paragraph based on your document and previous writings.
 
-![GitHub Copilot](images/copilot.gif)
+![copilot](https://user-images.githubusercontent.com/54777542/224550711-9927d67f-e63e-445e-9ff0-db7674d7acef.gif)
 
 To turn this off just **remove** or **comment out** the `"GitHub.copilot"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
 
@@ -183,7 +196,7 @@ This editor has built-in [LanguageTool](https://languagetool.org) support for `B
 
 Just click on the **Live Share** Sidebar button and you are good to go
 
-![Collaboration](images/collaborate.png)
+![collaborate](https://user-images.githubusercontent.com/54777542/224550768-48997ac9-8747-425b-b7b4-05473f3ba944.png)
 
 If you do not need the Live Collaboration at all, you can just **remove** or **comment out** the `"ms-vsliveshare.vsliveshare"` extension from the extensions list in `./.devcontainer/devcontainer.json` file.
 
@@ -239,6 +252,7 @@ I am open to and request you to contribute to this project. You can just Create 
 - @James-Yu's [latex-workshop](https://github.com/James-Yu/LaTeX-Workshop) For all the Latex support.
 - [danteev/texlive](https://github.com/dante-ev/docker-texlive) For Latex compilation.
 - @znck's [Grammarly](https://github.com/znck/grammarly) for Grammarly support.
+- [@thodson-hugs](https://github.com/thodson-hugs) for GitHub Copilot
 
 ## What's Next
 
