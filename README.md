@@ -41,6 +41,10 @@
 
 [Video Preview](https://user-images.githubusercontent.com/54777542/224549577-1c5e0b5f-c544-4fdf-a79e-25655483e2da.mp4)
 
+# Stars History
+
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwX1ZSRTd2UGc1WkpKM0hjOGZqMTlKNlN4bnQxVW9FdjNETko5Tg==#sanjib-sen/weblatex&Date" frameBorder="0"></iframe>
+
 ## Why
 
 Do you use latex as your Resume builder / Research Project / Documentation / Article or any Documentation? Then you probably sometimes wondered in your life if you could use the advantages of git. You could just commit your changes and roll back to older versions anytime you like. When writing a journal, you suddenly remembered you need the section that you deleted earlier. What will you do?
