@@ -41,9 +41,15 @@
 
 [Video Preview](https://user-images.githubusercontent.com/54777542/224549577-1c5e0b5f-c544-4fdf-a79e-25655483e2da.mp4)
 
-# Stars History
+## Star History
 
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwX1ZSRTd2UGc1WkpKM0hjOGZqMTlKNlN4bnQxVW9FdjNETko5Tg==#sanjib-sen/weblatex&Date" frameBorder="0"></iframe>
+<a href="https://star-history.com/#sanjib-sen/weblatex&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanjib-sen/weblatex&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanjib-sen/weblatex&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanjib-sen/weblatex&type=Date" />
+  </picture>
+</a>
 
 ## Why
 
