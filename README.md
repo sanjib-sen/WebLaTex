@@ -81,7 +81,7 @@ Yes, but
 ## Whats New
 
 - [GitHub Copilot](#github-copilot)
-- **[FIX]:** Autobuild fixes. No more annoying Error Notifications in every second.
+- Added support for the up-to-date texlive-full package. Now, You can stop worrying about package support.
 
 ## Installation Instructions
 
