@@ -41,6 +41,16 @@
 
 [Video Preview](https://user-images.githubusercontent.com/54777542/224549577-1c5e0b5f-c544-4fdf-a79e-25655483e2da.mp4)
 
+## Star History
+
+<a href="https://star-history.com/#sanjib-sen/weblatex&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanjib-sen/weblatex&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanjib-sen/weblatex&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanjib-sen/weblatex&type=Date" />
+  </picture>
+</a>
+
 ## Why
 
 Do you use latex as your Resume builder / Research Project / Documentation / Article or any Documentation? Then you probably sometimes wondered in your life if you could use the advantages of git. You could just commit your changes and roll back to older versions anytime you like. When writing a journal, you suddenly remembered you need the section that you deleted earlier. What will you do?
@@ -71,7 +81,7 @@ Yes, but
 ## Whats New
 
 - [GitHub Copilot](#github-copilot)
-- **[FIX]:** Autobuild fixes. No more annoying Error Notifications in every second.
+- Added support for the up-to-date texlive-full package. Now, You can stop worrying about package support.
 
 ## Installation Instructions
 
